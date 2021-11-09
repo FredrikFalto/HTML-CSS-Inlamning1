@@ -19,20 +19,52 @@
         background-color: azure;
     }
 
-    .profile-pic {
-        margin-right: 0px;
+    /* För att fylla ut den div som bilden ligger i */
+    img {
+        width: 100%;
+    }
+
+    /* För att enklare se hur stora divs är, !!TA BORT INNAN INLÄMMNING!! */
+    div {
+        border: solid 1px;
     }
 </style>
 
 <body>
     <div class="container">
+
         <div class="row">
-            <div class="col-xl-12 text-center" style="border: solid 1px;">
+            <div class="col-xl-12 text-center">
                 <h1>Fredrik Fältö</h1>
                 <p>Living the dream at <strong><a href="https://www.manutd.com/">Manchester United</a></strong>.</p>
                 <p>I am an iOS and Web Developer. I love Man United and football in general.</p>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-xl-6">
+                <img src="img/Alice1.jpeg" alt="">
+            </div>
+            <div class="col-xl-6">
+                <h1>Lorem, ipsum.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat animi est, modi dignissimos id quidem?</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-6">
+                <h1>Lorem, ipsum.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat animi est, modi dignissimos id quidem?</p>
+            </div>
+            <div class="col-xl-6">
+                <img src="img/Alice2.JPG" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <img src="img/Alice3.JPG" alt="">
+        </div>
+
     </div>
 </body>
 
