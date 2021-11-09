@@ -1,0 +1,17 @@
+body {
+    background-color: aquamarine;
+}
+
+.container {
+    background-color: azure;
+}
+
+/* För att fylla ut den div som bilden ligger i */
+img {
+    width: 100%;
+}
+
+/* För att enklare se hur stora divs är, !!TA BORT INNAN INLÄMMNING!! */
+/* div {
+    border: solid 1px;
+} */
