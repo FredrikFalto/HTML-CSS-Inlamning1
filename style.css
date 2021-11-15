@@ -1,14 +1,14 @@
-body {
-    background-color: aquamarine;
+div {
+    text-align: center;
 }
 
-.container {
-    background-color: azure;
+.logo {
+    width: 60px;
+    margin-left: 20px;
 }
 
-/* För att fylla ut den div som bilden ligger i */
-img {
-    width: 100%;
+.nav-item {
+    margin: 5px;
 }
 
 /* För att enklare se hur stora divs är, !!TA BORT INNAN INLÄMMNING!! */
