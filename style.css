@@ -1,7 +1,3 @@
-div {
-    text-align: center;
-}
-
 .logo {
     width: 60px;
     margin-left: 20px;
@@ -12,11 +8,29 @@ div {
 }
 
 .navbar {
+    position: inherit;
     background-color: #c70101;
 }
 
 footer {
+    position:inherit;
     background-color: #2c2c2c;
+    text-align: center;
+}
+
+footer .btn {
+    width: 3rem;
+}
+
+.jumbotron {
+    width: 100%;
+    border: solid 10px black;
+    z-index: -100;
+}
+
+video {
+    width: 75%;
+    overflow: hidden;
 }
 
 /* För att enklare se hur stora divs är, !!TA BORT INNAN INLÄMMNING!! */

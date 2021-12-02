@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
@@ -48,7 +49,8 @@
                         <h4 class="card-title">Home kit</h4>
                         <p class="card-text">Inspired by the home kits of the 1960s and a time when our fans cheered on
                             legends such as George Best, Sir Bobby Charlton and Denis Law.</p>
-                        <a href="#" class="btn btn-outline-dark">Buy</a>
+                        <a href="#" class="btn btn-outline-dark ml-auto mr-1" data-bs-toggle="modal"
+                            data-bs-target="#homekitModal">Buy</a>
                     </div>
                 </div>
             </div>
@@ -60,7 +62,8 @@
                         <h4 class="card-title">Away kit</h4>
                         <p class="card-text">This jersey quite literally puts the ‘M’ in Manchester United. If you take
                             a closer peek, you can see an ‘M’ has been woven into the pattern of the shirt.</p>
-                        <a href="#" class="btn btn-outline-dark">Buy</a>
+                        <a href="#" class="btn btn-outline-dark ml-auto mr-1" data-bs-toggle="modal"
+                            data-bs-target="#awaykitModal">Buy</a>
                     </div>
                 </div>
             </div>
@@ -72,7 +75,9 @@
                         <h4 class="card-title">Third kit</h4>
                         <p class="card-text">This season’s third shirt pays homage to the away shirt from the 1993/94
                             season when United completed the club's first-ever Double.</p>
-                        <a href="#" class="btn btn-outline-dark">Buy</a>
+                        <a href="#" class="btn btn-outline-dark ml-auto mr-1" data-bs-toggle="modal"
+                            data-bs-target="#thirdkitModal">Buy</a>
+
                     </div>
                 </div>
             </div>
@@ -84,7 +89,8 @@
                         <h4 class="card-title">Knitted hat</h4>
                         <p class="card-text">Top off your winter look. Suitable for winter walks, this stylish hat made
                             in 100% wool is a must-have for all supporters.</p>
-                        <a href="#" class="btn btn-outline-dark">Buy</a>
+                        <a href="#" class="btn btn-outline-dark ml-auto mr-1" data-bs-toggle="modal"
+                            data-bs-target="#knittedhatModal">Buy</a>
                     </div>
                 </div>
             </div>
@@ -96,7 +102,8 @@
                         <h4 class="card-title">Face coverings</h4>
                         <p class="card-text">Proudly displaying team branding and colours, the stretchable elastic ear
                             straps along with the soft and breathable fabric made for comfortable wearing.</p>
-                        <a href="#" class="btn btn-outline-dark">Buy</a>
+                        <a href="#" class="btn btn-outline-dark ml-auto mr-1" data-bs-toggle="modal"
+                            data-bs-target="#facecoveringsModal">Buy</a>
                     </div>
                 </div>
             </div>
@@ -108,14 +115,125 @@
                         <h4 class="card-title">Logo Hoodie</h4>
                         <p class="card-text">Suitable for matchdays and beyond, this sweatshirt is a must-have for
                             supporters. Stylish and comfortable, it also features official club branding.</p>
-                        <a href="#" class="btn btn-outline-dark ml-auto mr-1" data-bs-toggle="modal" data-bs-target="#myModal">Buy</a>
+                        <a href="#" class="btn btn-outline-dark ml-auto mr-1" data-bs-toggle="modal"
+                            data-bs-target="#hoodieModal">Buy</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="myModal">
+    <div class="modal fade" id="homekitModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Home kit</h4>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <img class="w-100" src="img/manutd-homekit.jpeg" alt="2021/22 Home kit">
+                    <p>Inspired by the home kits of the 1960s and a time when our fans cheered on legends such as George
+                        Best, Sir Bobby Charlton and Denis Law.</p>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="awaykitModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Away kit</h4>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <img class="w-100" src="img/manutd-awaykit.jpeg" alt="2021/22 Away kit">
+                    <p>This jersey quite literally puts the ‘M’ in Manchester United. If you take a closer peek, you can
+                        see an ‘M’ has been woven into the pattern of the shirt.</p>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="thirdkitModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Third kit</h4>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <img class="w-100" src="img/manutd-thirdkit.jpeg" alt="2021/22 Third kit">
+                    <p>This season’s third shirt pays homage to the away shirt from the 1993/94 season when United
+                        completed the club's first-ever Double.</p>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="knittedhatModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Knitted hat</h4>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <img class="w-100" src="img/manutd-redhat.jpeg" alt="Knitted hat">
+                    <p>Top off your winter look. Suitable for winter walks, this stylish hat made in 100% wool is a
+                        must-have for all supporters.</p>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="facecoveringsModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Face coverings</h4>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <img class="w-100" src="img/manutd-facecoverings.jpeg" alt="Face coverings">
+                    <p>Suitable for matchdays and beyond, this sweatshirt is a must-have for supporters. Stylish and
+                        comfortable, it also features official club branding.</p>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="hoodieModal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <!-- Modal Header -->
@@ -125,7 +243,8 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <img class="w-100" src="img/manutd-hoodie.jpeg" alt="Hoodie">
-                    <p>Suitable for matchdays and beyond, this sweatshirt is a must-have for supporters. Stylish and comfortable, it also features official club branding.</p>
+                    <p>Proudly displaying team branding and colours, the stretchable elastic ear straps along with the
+                        soft and breathable fabric made for comfortable wearing.</p>
                 </div>
                 <!-- Modal footer -->
                 <div class="modal-footer">
@@ -138,14 +257,15 @@
 </body>
 
 <footer>
-    <div class="row">
-        <div class="col-xl-6 col-lg-6">
-            <a href="alice.html">Alice</a>
-        </div>
-
-        <div class="col-xl-6 col-lg-6">
-            <a href="august.html">August</a>
-        </div>
+    <div class="container p-3">
+        <a href="https://www.facebook.com/manchesterunited" class="btn btn-outline-light m-1" target="_blank"><i
+                class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/manutd" class="btn btn-outline-light m-1" target="_blank"><i
+                class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/manchesterunited" class="btn btn-outline-light m-1" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/manutd" class="btn btn-outline-light m-1" target="_blank"><i
+                class="fab fa-youtube text-center"></i></a>
     </div>
 </footer>
 
