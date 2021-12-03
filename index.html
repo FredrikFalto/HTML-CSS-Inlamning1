@@ -8,30 +8,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Inlämningsuppgift 1</title>
 </head>
 
 <header>
-    <nav class="navbar navbar-expand-sm">
+    <!-- Skapar navbar, klassen navbar-dark för att få en ljus "hamburger" ikon.
+    navbar-expand-md för att menyn ska kollapsa till hamburger vid medium storlek på webbläsarfönstret -->
+    <nav class="navbar navbar-expand-md navbar-dark text-center">
         <a class="navbar-brand" href="index.html">
-            <img class="logo" src="img/manutd_logo.png" alt="United logo">
+            <img class="logo" src="img/manutd_logo.png" alt="Manchester United logo">
         </a>
 
+        <!-- Skapar hamburgarikonen -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon text-white"></span></button>
 
-        <!-- Container-fluid så att menyknapparna hamnar under loggan på mindre skärmar -->
-        <div class="container-fluid">
-
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Fixtures</a>
+                    <a class="nav-link text-white" href="#oldTrafford">Old Trafford</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Players</a>
+                    <a class="nav-link text-white" href="#sirAlex">Sir Alex Ferguson</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="shop.html">Shop</a>
@@ -46,27 +47,27 @@
         <!-- Carousel -->
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-            <!-- Indicators/dots -->
+            <!-- Strecken längst ned i carouselen som visar vilken bild som visas -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
             </div>
 
-            <!-- The slideshow/carousel -->
+            <!-- Bilderna i carouselen -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/here_we_belong.jpeg" alt="Here we belong" class="d-block w-100">
+                    <img src="img/here_we_belong.jpeg" alt="Man United - Here we belong" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/RonaldoGoal.jpeg" alt="Here we belong" class="d-block w-100">
+                    <img src="img/manutd-teampic.jpeg" alt="Man United - Team picture" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/OldTrafford.jpg" alt="Here we belong" class="d-block w-100">
+                    <img src="img/RonaldoGoal.jpeg" alt="Man United - Ronaldo" class="d-block w-100">
                 </div>
             </div>
 
-            <!-- Left and right controls/icons -->
+            <!-- Funktionalitet för att gå till föregående eller nästa bild -->
             <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </button>
@@ -77,60 +78,90 @@
 
         <hr>
 
-        <div class="row m-3">
-            <div class="col-lg-5">
-
+        <!-- Skapar ny rad inuti container diven, sätter även en zoom animation på hela diven -->
+        <div data-aos="zoom-out" class="row m-3 text-center">
+            <div class="col-lg-5 order-last">
+                <img class="center-block w-75" src="img/manutd-crest.png" alt="Manchester United club crest">
             </div>
 
+            <!-- Div för textdelen av raden, sätter så att den är sist på större skärmar och först på mindre -->
+            <div class="col-lg-7 order-lg-last order-md-first">
+                <h2>The club</h2>
+                <p>Manchester United Football Club is a professional football club based in Old Trafford, Greater
+                    Manchester, England, that competes in the Premier League, the top flight of English football.
+                    Nicknamed "the Red Devils", the club was founded as Newton Heath LYR Football Club in 1878, changed
+                    its name to Manchester United in 1902 and moved to its current stadium, Old Trafford, in 1910.
+                    Manchester United have won more trophies than any other club in English football, with a record 20
+                    League titles, 12 FA Cups, five League Cups and a record 21 FA Community Shields. United have also
+                    won three European Cups/UEFA Champions Leagues, one UEFA Europa League, one UEFA Cup Winners' Cup,
+                    one UEFA Super Cup, one Intercontinental Cup and one FIFA Club World Cup. In 1998–99, the club
+                    became the first in the history of English football to achieve the continental European treble. By
+                    winning the UEFA Europa League in 2016–17, they became one of five clubs to have won all three main
+                    UEFA club competitions.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Skapar ny rad inuti container diven, sätter även en zoom animation på hela diven -->
+        <div id="oldTrafford" data-aos="zoom-out-up" class="row m-3 text-center">
             <div class="col-lg-7">
                 <h2>Old Trafford</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam pariatur perferendis, dolore
-                    veritatis non ea voluptates eaque animi debitis earum! Illum facilis reprehenderit illo?
-                    Exercitationem hic unde vero? Minus rem, dolores neque voluptatum nisi iure soluta voluptate qui,
-                    magni non voluptates quibusdam veritatis dolore. Assumenda optio obcaecati sed at.</p>
-            </div>
-        </div>
-
-        <div class="row m-3">
-            <div class="col-lg-7">
-                <h2>The club</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam pariatur perferendis, dolore
-                    veritatis non ea voluptates eaque animi debitis earum! Illum facilis reprehenderit illo?
-                    Exercitationem hic unde vero? Minus rem, dolores neque voluptatum nisi iure soluta voluptate qui,
-                    magni non voluptates quibusdam veritatis dolore. Assumenda optio obcaecati sed at.</p>
+                <p>In February 1909, six weeks before the club's first FA Cup title, Old Trafford was named as the home
+                    of Manchester United, following the purchase of land for around £60,000. Architect Archibald Leitch
+                    was given a budget of £30,000 for construction; original plans called for seating capacity of
+                    100,000, though budget constraints forced a revision to 77,000. The building was constructed by
+                    Messrs Brameld and Smith of Manchester. The stadium's record attendance was registered on 25 March
+                    1939, when an FA Cup semi-final between Wolverhampton Wanderers and Grimsby Town drew 76,962
+                    spectators.</p>
             </div>
 
             <div class="col-lg-5">
-
+                <img class="center-block w-100" src="img/manutd-oldtrafford.jpeg"
+                    alt="Manchester United - Old Trafford">
             </div>
         </div>
 
-        <div class="row m-3">
-            <div class="col-lg-5">
+        <hr>
 
+        <!-- Skapar ny rad inuti container diven, sätter även en zoom animation på hela diven -->
+        <div id="sirAlex" data-aos="zoom-in" class="row m-3 text-center">
+            <div class="col-lg-5 order-last">
+                <img class="center-block w-75" src="img/manutd-siralex.jpeg" alt="Manchester United club crest">
             </div>
 
-            <div class="col-lg-7">
-                <h2>The famous no.7 shirt</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam pariatur perferendis, dolore
-                    veritatis non ea voluptates eaque animi debitis earum! Illum facilis reprehenderit illo?
-                    Exercitationem hic unde vero? Minus rem, dolores neque voluptatum nisi iure soluta voluptate qui,
-                    magni non voluptates quibusdam veritatis dolore. Assumenda optio obcaecati sed at.</p>
+            <div class="col-lg-7 text-center order-lg-last order-md-first">
+                <h2>Sir Alex Ferguson</h2>
+                <p>Sir Alexander Chapman Ferguson CBE (born 31 December 1941) is a Scottish former football manager and
+                    player, best known for managing Manchester United from 1986 to 2013. He is widely regarded as the
+                    greatest football manager of all time, and has won more trophies than any other manager in the
+                    history of football. Ferguson was appointed manager of Manchester United in November 1986. During
+                    his 26 years with Manchester United he won 38 trophies, including 13 Premier League titles, five FA
+                    Cups, and two UEFA Champions League titles. He was knighted in the 1999 Queen's Birthday Honours
+                    list for his services to the game. Ferguson is the longest-serving manager of Manchester United,
+                    having overtaken Sir Matt Busby's record on 19 December 2010. He retired from management at the end
+                    of the 2012–13 season, having won the Premier League in his final season.</p>
             </div>
         </div>
-
-
     </div>
+
+    <!-- Initierar script paket för animationer på de olika kolumnerna -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 
 <footer>
+    <!-- Container div med lite padding för att göra den större -->
     <div class="container p-3">
+        <!-- Länkar med ikoner till olika sociala medier -->
         <a href="https://www.facebook.com/manchesterunited" class="btn btn-outline-light m-1" target="_blank"><i
                 class="fab fa-facebook-f"></i></a>
         <a href="https://twitter.com/manutd" class="btn btn-outline-light m-1" target="_blank"><i
                 class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/manchesterunited/" class="btn btn-outline-light m-1" target="_blank"><i
+        <a href="https://www.instagram.com/manchesterunited" class="btn btn-outline-light m-1" target="_blank"><i
                 class="fab fa-instagram"></i></a>
         <a href="https://www.youtube.com/manutd" class="btn btn-outline-light m-1" target="_blank"><i
                 class="fab fa-youtube text-center"></i></a>
